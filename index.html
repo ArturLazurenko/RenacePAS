@@ -324,7 +324,79 @@ line-height: 1.8;
 <link rel='stylesheet' id='wpzoom-elementor-addons-css-backend-image-box-css' href='wp-content/plugins/wpzoom-elementor-addons/includes/widgets/image-box/backend.css%3Fver=1.1.44.css' media='all' />
 <link rel='stylesheet' id='wpzoom-elementor-addons-css-backend-featured-category-css' href='wp-content/plugins/wpzoom-elementor-addons/includes/widgets/featured-category/backend.css%3Fver=1.1.44.css' media='all' />
 
+<style id="renace-mobile-fixes">
+/* Ajustes de la copia estática: prevalecen sobre el tema Inspiro. */
+@media (max-width: 767px) {
+  body.home.has-header-image.inspiro-front-page .custom-header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    height: 65svh;
+    min-height: 340px;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  body.home.has-header-image.inspiro-front-page .custom-header-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    max-height: none;
+  }
+
+  body.home.has-header-image.inspiro-front-page .custom-header-media img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: none;
+  }
+
+  body.home.has-header-image.inspiro-front-page .site-branding {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  body.home .site-title {
+    font-size: 28px;
+  }
+
+  body.home .site-title a,
+  body.home .site-description {
+    color: #fff !important;
+    text-shadow: 0 2px 6px #000;
+  }
+
+  .elementor-5550 .elementor-element.elementor-element-e503ecc {
+    --width: 100%;
+  }
+
+  .elementor-5550 .elementor-element.elementor-element-24d8d90 {
+    --container-widget-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Las flechas del carrusel deben quedar dentro de la pantalla. */
+  .elementor-5550 .wpz-slick--carousel .slick-prev {
+    left: 10px;
+  }
+
+  .elementor-5550 .wpz-slick--carousel .slick-next {
+    right: 10px;
+  }
+}
+</style>
 </head>
+
 
 <body class="home wp-singular page-template page-template-page-templates page-template-full-width-builder-bb page-template-page-templatesfull-width-builder-bb-php page page-id-5550 wp-custom-logo wp-embed-responsive wp-theme-inspiro sfsi_actvite_theme_default inspiro-front-page has-header-image page-layout-full-width post-display-content-excerpt full-height-iframe-video colors-light elementor-default elementor-kit-12 elementor-page elementor-page-5550">
 	<div id="page-top" tabindex="-1"></div>
@@ -428,7 +500,7 @@ line-height: 1.8;
 		<div class="site-branding-text">
 			
 			
-							<h1 class="site-title"><a href="index.html" target="_blank">Fundación Renace.Pas</a></h1>
+							<h1 class="site-title"><a target="_blank">Fundación Renace.Pas</a></h1>
 			
 							<p class="site-description">Prevención, Atención y Seguimiento de Violencia Sexual.</p>
 					</div><!-- .site-branding-text -->
@@ -474,7 +546,7 @@ line-height: 1.8;
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-02b94ab elementor-invisible elementor-widget elementor-widget-text-editor" data-id="02b94ab" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>» Renaciendo Juntos, Sanando Vidas y Fortaleciendo Entornos».</p>								</div>
+									<p>«Renaciendo Juntos, Sanando Vidas y Fortaleciendo Entornos».</p>								</div>
 				</div>
 					</div>
 				</div>
@@ -485,7 +557,7 @@ line-height: 1.8;
 				</div>
 				<div class="elementor-element elementor-element-24d8d90 elementor-widget__width-initial e-transform elementor-widget elementor-widget-text-editor" data-id="24d8d90" data-element_type="widget" data-settings="{&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-360,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<div class="elementor-element elementor-element-50190c1e elementor-widget elementor-widget-heading" data-id="50190c1e" data-element_type="widget" data-widget_type="heading.default" style="gap: var(--row-gap) var(--column-gap); --widgets-spacing: 20px 20px; --widgets-spacing-row: 20px; --widgets-spacing-column: 20px; width: 780px; margin-block-end: 20px; text-align: center; margin-bottom: 0px;">
+									<div class="elementor-element elementor-element-50190c1e elementor-widget elementor-widget-heading" data-id="50190c1e" data-element_type="widget" data-widget_type="heading.default" style="gap: var(--row-gap) var(--column-gap); --widgets-spacing: 20px 20px; --widgets-spacing-row: 20px; --widgets-spacing-column: 20px; width: 780px; max-width: 100%; margin-block-end: 20px; text-align: center; margin-bottom: 0px;">
 <div class="elementor-widget-container" style="transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s); margin: 0px 0px 50px;">
 <h2 class="elementor-heading-title elementor-size-default" style="color: rgb(32, 32, 32); font-size: 26px; font-family: Montserrat, sans-serif; text-transform: uppercase;"><span style="letter-spacing: 0px; color: rgb(68, 68, 68); font-family: Inter, sans-serif; font-size: 16px; font-weight: 400;">Un grupo interdisciplinario para la Prevención, Atención&nbsp;</span></h2>
 <h2 class="elementor-heading-title elementor-size-default" style="color: rgb(32, 32, 32); font-size: 26px; font-family: Montserrat, sans-serif; text-transform: uppercase;"><span style="letter-spacing: 0px; color: rgb(68, 68, 68); font-family: Inter, sans-serif; font-size: 16px; font-weight: 400;">y Seguimiento de Violencia Sexual.</span></h2>
@@ -575,7 +647,7 @@ line-height: 1.8;
 						<div class="elementor-element elementor-element-d5178a6 elementor-widget elementor-widget-heading" data-id="d5178a6" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 					<h2 class="elementor-heading-title elementor-size-default">Población Objetivo</h2>				</div>
-				</div>
+				</div>	
 				<div class="elementor-element elementor-element-ca22a60 elementor-widget elementor-widget-text-editor" data-id="ca22a60" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 									<p>-Escuelas.</p>
@@ -663,7 +735,7 @@ line-height: 1.8;
 </li>
 </ul></div><ul class="wpzoom-blocks wpzoom-blocks_portfolio-block_items-list"><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5770 wpzoom-blocks_portfolio-block_category-48 has-cover'  data-category='48'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
 						<div class='wpzoom-blocks_portfolio-block_item-media'>
-							<a href='index.html%3Fp=5770.html' title='G’woon' rel='bookmark'><img decoding="async" width="600" height="400" src="wp-content/uploads/2018/01/Foto-de-Rous💕-8-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2018/01/Foto-de-Rous💕-8-600x400.jpg 600w, wp-content/uploads/2018/01/Foto-de-Rous💕-8-1200x800.jpg 1200w" sizes="100vw" /></a>
+							<a href='Gwoon.html' title='G’woon' rel='bookmark'><img decoding="async" width="600" height="400" src="wp-content/uploads/2018/01/Foto-de-Rous💕-8-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2018/01/Foto-de-Rous💕-8-600x400.jpg 600w, wp-content/uploads/2018/01/Foto-de-Rous💕-8-1200x800.jpg 1200w" sizes="100vw" /></a>
 						</div><div class="portfolio-block-entry-thumbnail-popover-content" data-show-caption=""><a class="mfp-image portfolio-block-popup-video popup_image_icon" href="wp-content/uploads/2018/01/Foto-de-Rous💕-8.jpg" aria-label="G’woon"><span class='wpzoom-blocks_portfolio-block_lightbox_icon'>
 										<svg enable-background='new 0 0 32 32' id='Layer_4' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 											<g>
@@ -672,9 +744,9 @@ line-height: 1.8;
 													<polyline fill='none' points='16,5 27,5 27,16' stroke='#fff' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/>
 											</g>
 										</svg>
-									</span></a><span class="portfolio_item-title" style="display: none;"><a href="index.html%3Fp=5770.html" title="G’woon">G’woon</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='index.html%3Fp=5770.html' title='G’woon' rel='bookmark'>G’woon</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5746 wpzoom-blocks_portfolio-block_category-52 has-cover'  data-category='52'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
+									</span></a><span class="portfolio_item-title" style="display: none;"><a href="Gwoon.html" title="G’woon">G’woon</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='Gwoon.html' title='G’woon' rel='bookmark'>G’woon</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5746 wpzoom-blocks_portfolio-block_category-52 has-cover'  data-category='52'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
 						<div class='wpzoom-blocks_portfolio-block_item-media'>
-							<a href='index.html%3Fp=5746.html' title='Congreso' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2025/01/cropped-Foto-de-Rous💕-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2025/01/cropped-Foto-de-Rous💕-600x400.jpg 600w, wp-content/uploads/2025/01/cropped-Foto-de-Rous💕-1200x800.jpg 1200w" sizes="100vw" /></a>
+							<a href='Congreso.html' title='Congreso' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2025/01/cropped-Foto-de-Rous💕-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2025/01/cropped-Foto-de-Rous💕-600x400.jpg 600w, wp-content/uploads/2025/01/cropped-Foto-de-Rous💕-1200x800.jpg 1200w" sizes="100vw" /></a>
 						</div><div class="portfolio-block-entry-thumbnail-popover-content" data-show-caption=""><a class="mfp-image portfolio-block-popup-video popup_image_icon" href="wp-content/uploads/2025/01/cropped-Foto-de-Rous💕.jpg" aria-label="Congreso"><span class='wpzoom-blocks_portfolio-block_lightbox_icon'>
 										<svg enable-background='new 0 0 32 32' id='Layer_4' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 											<g>
@@ -683,9 +755,9 @@ line-height: 1.8;
 													<polyline fill='none' points='16,5 27,5 27,16' stroke='#fff' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/>
 											</g>
 										</svg>
-									</span></a><span class="portfolio_item-title" style="display: none;"><a href="index.html%3Fp=5746.html" title="Congreso">Congreso</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='index.html%3Fp=5746.html' title='Congreso' rel='bookmark'>Congreso</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5711 wpzoom-blocks_portfolio-block_category-53 has-cover'  data-category='53'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
+									</span></a><span class="portfolio_item-title" style="display: none;"><a href="Congreso.html" title="Congreso">Congreso</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='Congreso.html' title='Congreso' rel='bookmark'>Congreso</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5711 wpzoom-blocks_portfolio-block_category-53 has-cover'  data-category='53'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
 						<div class='wpzoom-blocks_portfolio-block_item-media'>
-							<a href='index.html%3Fp=5711.html' title='Inauguración del albergue Nänä' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2017/09/Foto-de-Rous💕-5-3-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" sizes="100vw" /></a>
+							<a href='Albergue.html' title='Inauguración del albergue Nänä' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2017/09/Foto-de-Rous💕-5-3-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" sizes="100vw" /></a>
 						</div><div class="portfolio-block-entry-thumbnail-popover-content" data-show-caption=""><a class="mfp-image portfolio-block-popup-video popup_image_icon" href="wp-content/uploads/2017/09/Foto-de-Rous💕-5-3.jpg" aria-label="Inauguración del albergue Nänä"><span class='wpzoom-blocks_portfolio-block_lightbox_icon'>
 										<svg enable-background='new 0 0 32 32' id='Layer_4' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 											<g>
@@ -694,9 +766,9 @@ line-height: 1.8;
 													<polyline fill='none' points='16,5 27,5 27,16' stroke='#fff' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/>
 											</g>
 										</svg>
-									</span></a><span class="portfolio_item-title" style="display: none;"><a href="index.html%3Fp=5711.html" title="Inauguración del albergue Nänä">Inauguración del albergue Nänä</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='index.html%3Fp=5711.html' title='Inauguración del albergue Nänä' rel='bookmark'>Inauguración del albergue Nänä</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5709 wpzoom-blocks_portfolio-block_category-48 has-cover'  data-category='48'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
+									</span></a><span class="portfolio_item-title" style="display: none;"><a href="Albergue.html" title="Inauguración del albergue Nänä">Inauguración del albergue Nänä</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='Albergue.html' title='Inauguración del albergue Nänä' rel='bookmark'>Inauguración del albergue Nänä</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5709 wpzoom-blocks_portfolio-block_category-48 has-cover'  data-category='48'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
 						<div class='wpzoom-blocks_portfolio-block_item-media'>
-							<a href='index.html%3Fp=5709.html' title='Coparmex' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2025/01/Foto-de-Rous💕-1-1-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2025/01/Foto-de-Rous💕-1-1-600x400.jpg 600w, wp-content/uploads/2025/01/Foto-de-Rous💕-1-1-200x132.jpg 200w" sizes="100vw" /></a>
+							<a href='Coparmex.html' title='Coparmex' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2025/01/Foto-de-Rous💕-1-1-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2025/01/Foto-de-Rous💕-1-1-600x400.jpg 600w, wp-content/uploads/2025/01/Foto-de-Rous💕-1-1-200x132.jpg 200w" sizes="100vw" /></a>
 						</div><div class="portfolio-block-entry-thumbnail-popover-content" data-show-caption=""><a class="mfp-image portfolio-block-popup-video popup_image_icon" href="wp-content/uploads/2025/01/Foto-de-Rous💕-1-1.jpg" aria-label="Coparmex"><span class='wpzoom-blocks_portfolio-block_lightbox_icon'>
 										<svg enable-background='new 0 0 32 32' id='Layer_4' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 											<g>
@@ -705,9 +777,9 @@ line-height: 1.8;
 													<polyline fill='none' points='16,5 27,5 27,16' stroke='#fff' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/>
 											</g>
 										</svg>
-									</span></a><span class="portfolio_item-title" style="display: none;"><a href="index.html%3Fp=5709.html" title="Coparmex">Coparmex</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='index.html%3Fp=5709.html' title='Coparmex' rel='bookmark'>Coparmex</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5703 wpzoom-blocks_portfolio-block_category-49 has-cover'  data-category='49'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
+									</span></a><span class="portfolio_item-title" style="display: none;"><a href="Coparmex.html" title="Coparmex">Coparmex</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='Coparmex.html' title='Coparmex' rel='bookmark'>Coparmex</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5703 wpzoom-blocks_portfolio-block_category-49 has-cover'  data-category='49'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
 						<div class='wpzoom-blocks_portfolio-block_item-media'>
-							<a href='index.html%3Fp=5703.html' title='Universidad Mondragón' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2017/09/IMG-20240222-WA0017-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2017/09/IMG-20240222-WA0017-600x400.jpg 600w, wp-content/uploads/2017/09/IMG-20240222-WA0017-200x133.jpg 200w, wp-content/uploads/2017/09/IMG-20240222-WA0017.jpg 1080w" sizes="100vw" /></a>
+							<a href='Mondragon.html' title='Universidad Mondragón' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2017/09/IMG-20240222-WA0017-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" srcset="wp-content/uploads/2017/09/IMG-20240222-WA0017-600x400.jpg 600w, wp-content/uploads/2017/09/IMG-20240222-WA0017-200x133.jpg 200w, wp-content/uploads/2017/09/IMG-20240222-WA0017.jpg 1080w" sizes="100vw" /></a>
 						</div><div class="portfolio-block-entry-thumbnail-popover-content" data-show-caption=""><a class="mfp-image portfolio-block-popup-video popup_image_icon" href="wp-content/uploads/2017/09/IMG-20240222-WA0017.jpg" aria-label="Universidad Mondragón"><span class='wpzoom-blocks_portfolio-block_lightbox_icon'>
 										<svg enable-background='new 0 0 32 32' id='Layer_4' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 											<g>
@@ -716,9 +788,9 @@ line-height: 1.8;
 													<polyline fill='none' points='16,5 27,5 27,16' stroke='#fff' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/>
 											</g>
 										</svg>
-									</span></a><span class="portfolio_item-title" style="display: none;"><a href="index.html%3Fp=5703.html" title="Universidad Mondragón">Universidad Mondragón</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='index.html%3Fp=5703.html' title='Universidad Mondragón' rel='bookmark'>Universidad Mondragón</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5699 wpzoom-blocks_portfolio-block_category-53 has-cover'  data-category='53'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
+									</span></a><span class="portfolio_item-title" style="display: none;"><a href="Mondragon.html" title="Universidad Mondragón">Universidad Mondragón</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='Mondragon.html' title='Universidad Mondragón' rel='bookmark'>Universidad Mondragón</a></h3></div></article></li><li class='wpzoom-blocks_portfolio-block_item wpzoom-blocks_portfolio-block_item-5699 wpzoom-blocks_portfolio-block_category-53 has-cover'  data-category='53'><article class='wpzoom-blocks_portfolio-block_item-wrap portfolio_item'><div class='wpzoom-blocks_portfolio-block_item-thumbnail'>
 						<div class='wpzoom-blocks_portfolio-block_item-media'>
-							<a href='index.html%3Fp=5699.html' title='Inauguración del albergue Nänä' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2017/09/Foto-de-Rous💕-6-1-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" sizes="100vw" /></a>
+							<a href='Albergue.html' title='Inauguración del albergue Nänä' rel='bookmark'><img loading="lazy" decoding="async" width="600" height="400" src="wp-content/uploads/2017/09/Foto-de-Rous💕-6-1-600x400.jpg" class="attachment-portfolio_item-thumbnail size-portfolio_item-thumbnail wp-post-image" alt="" sizes="100vw" /></a>
 						</div><div class="portfolio-block-entry-thumbnail-popover-content" data-show-caption=""><a class="mfp-image portfolio-block-popup-video popup_image_icon" href="wp-content/uploads/2017/09/Foto-de-Rous💕-6-1.jpg" aria-label="Inauguración del albergue Nänä"><span class='wpzoom-blocks_portfolio-block_lightbox_icon'>
 										<svg enable-background='new 0 0 32 32' id='Layer_4' version='1.1' viewBox='0 0 32 32' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
 											<g>
@@ -727,7 +799,7 @@ line-height: 1.8;
 													<polyline fill='none' points='16,5 27,5 27,16' stroke='#fff' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='2'/>
 											</g>
 										</svg>
-									</span></a><span class="portfolio_item-title" style="display: none;"><a href="index.html%3Fp=5699.html" title="Inauguración del albergue Nänä">Inauguración del albergue Nänä</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='index.html%3Fp=5699.html' title='Inauguración del albergue Nänä' rel='bookmark'>Inauguración del albergue Nänä</a></h3></div></article></li><li class="wpzoom-preloader-container"><div class="wpzoom-portfolio-preloader"><svg  width="75" version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+									</span></a><span class="portfolio_item-title" style="display: none;"><a href="Albergue.html" title="Inauguración del albergue Nänä">Inauguración del albergue Nänä</a></span></div></div><div class='wpzoom-blocks_portfolio-block_item-details'><h3 class='wpzoom-blocks_portfolio-block_item-title'><a href='Albergue.html' title='Inauguración del albergue Nänä' rel='bookmark'>Inauguración del albergue Nänä</a></h3></div></article></li><li class="wpzoom-preloader-container"><div class="wpzoom-portfolio-preloader"><svg  width="75" version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
 		  <circle fill="#ffffff" stroke="none" cx="6" cy="50" r="6"><animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1"/></circle>
 		  <circle fill="#ffffff" stroke="none" cx="26" cy="50" r="6"><animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2"/></circle>
 		  <circle fill="#ffffff" stroke="none" cx="46" cy="50" r="6"><animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3"/></circle>
@@ -861,11 +933,7 @@ line-height: 1.8;
 							<div class="widget-column footer-widget-1">
 					<section id="block-9" class="widget widget_block"><h2 class="title">Ayuda y servicios</h2><div class="wp-widget-group__inner-blocks">
 <p class="wp-block-paragraph">Horarios de Atención:
-Lunes a Viernes de 9 a 18 hrs Sábados de 10 a 14 hrs. Tel: 442-350-8344  Agendar cita .</p>
-</div></section>					</div>
-									<div class="widget-column footer-widget-2">
-					<section id="block-10" class="widget widget_block"><h2 class="title">Dirección</h2><div class="wp-widget-group__inner-blocks">
-<p class="wp-block-paragraph">Cerro de las campanas #8, Centro Universitario, Qro (espacio EGRETEQ. A.C) <br><a href="https://demo.wpzoom.com/inspiro-lite-blocks/contact/">
+Lunes a Viernes de 9 a 18 hrs Sábados de 10 a 14 hrs. Tel: 442-350-8344  Agendar cita.</p>
 </div></section>					</div>
 									<div class="widget-column footer-widget-3">
 					<section id="block-11" class="widget widget_block"><!-- wp:widget-group {"title":"Redes Sociales"} -</section>					</div>
