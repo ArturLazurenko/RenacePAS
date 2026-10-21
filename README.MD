@@ -1,4 +1,5 @@
 Este codigo es un desastra ayuda xdddddd
+va para goty xdddd
 
 cosas por hacer:
 - cambiar ayuda legal por acesoria legal ()
