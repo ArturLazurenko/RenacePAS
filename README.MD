@@ -3,7 +3,7 @@ va para goty xdddd
 
 cosas por hacer:
 - cambiar ayuda legal por acesoria legal ()
-- Quitar dirección ()
+- Quitar dirección (Si)
 - Página de donativos ()
 - Ayuda y servicios: número de teléfono para agendar cita, quitar dirección en todas las páginas ()
 - Página de atención, solo asesoría legal
@@ -18,3 +18,4 @@ cosas por hacer:
   - Mujeres 
   - Hombres
   - LGBT
+
