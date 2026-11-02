@@ -324,6 +324,28 @@ line-height: 1.8;
 <link rel='stylesheet' id='wpzoom-elementor-addons-css-backend-image-box-css' href='wp-content/plugins/wpzoom-elementor-addons/includes/widgets/image-box/backend.css%3Fver=1.1.44.css' media='all' />
 <link rel='stylesheet' id='wpzoom-elementor-addons-css-backend-featured-category-css' href='wp-content/plugins/wpzoom-elementor-addons/includes/widgets/featured-category/backend.css%3Fver=1.1.44.css' media='all' />
 
+<style id="renacepas-mobile-fix">
+/* Fix móvil: encabezado desbordado / imagen y texto cortados */
+html, body { max-width: 100%; overflow-x: hidden; }
+.custom-header { position: relative; width: 100%; max-width: 100vw; overflow: hidden; }
+.custom-header-media, .custom-header-media #wp-custom-header { position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden; }
+.custom-header-media img, .wp-custom-header img { position: absolute; inset: 0; width: 100% !important; height: 100% !important; max-width: 100% !important; object-fit: cover; object-position: center center; transform: none !important; }
+@media (max-width: 768px) {
+  .custom-header { min-height: 100svh; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+  .custom-header .site-branding { position: relative; z-index: 2; width: 100%; max-width: 100%; left: 0; right: 0; margin: 0; padding: 0 20px; box-sizing: border-box; text-align: center; transform: none; }
+  .custom-header .site-branding .inner-wrap { width: 100%; max-width: 100%; margin: 0; padding: 0; box-sizing: border-box; }
+  .custom-header .site-title { font-size: clamp(26px, 8vw, 40px); line-height: 1.15; word-wrap: break-word; overflow-wrap: anywhere; white-space: normal; }
+  .custom-header .site-description { font-size: 16px; line-height: 1.5; white-space: normal; }
+  .custom-header-media img, .wp-custom-header img { object-position: 60% center; }
+}
+/* Fix móvil: texto de "¿Quiénes somos?" cortado */
+.elementor-element-24d8d90, .elementor-element-24d8d90 .elementor-widget-container { max-width: 100%; box-sizing: border-box; }
+.elementor-element-50190c1e { width: 100% !important; max-width: 780px; }
+.elementor-element-50190c1e .elementor-heading-title { text-align: center; overflow-wrap: break-word; white-space: normal; }
+@media (max-width: 768px) {
+  .elementor-element-24d8d90 { width: 100% !important; transform: none !important; padding: 0 20px; }
+}
+</style>
 </head>
 
 <body class="home wp-singular page-template page-template-page-templates page-template-full-width-builder-bb page-template-page-templatesfull-width-builder-bb-php page page-id-5550 wp-custom-logo wp-embed-responsive wp-theme-inspiro sfsi_actvite_theme_default inspiro-front-page has-header-image page-layout-full-width post-display-content-excerpt full-height-iframe-video colors-light elementor-default elementor-kit-12 elementor-page elementor-page-5550">
@@ -428,7 +450,7 @@ line-height: 1.8;
 		<div class="site-branding-text">
 			
 			
-							<h1 class="site-title">Fundación Renace.Pas</a></h1>
+							<h1 class="site-title">Fundación Renace.Pas</h1>
 			
 							<p class="site-description" style="color: white;">Prevención, Atención y Seguimiento de Violencia Sexual.</p>
 					</div><!-- .site-branding-text -->
@@ -485,7 +507,7 @@ line-height: 1.8;
 				</div>
 				<div class="elementor-element elementor-element-24d8d90 elementor-widget__width-initial e-transform elementor-widget elementor-widget-text-editor" data-id="24d8d90" data-element_type="widget" data-settings="{&quot;_transform_rotateZ_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-360,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<div class="elementor-element elementor-element-50190c1e elementor-widget elementor-widget-heading" data-id="50190c1e" data-element_type="widget" data-widget_type="heading.default" style="gap: var(--row-gap) var(--column-gap); --widgets-spacing: 20px 20px; --widgets-spacing-row: 20px; --widgets-spacing-column: 20px; width: 780px; margin-block-end: 20px; text-align: center; margin-bottom: 0px;">
+									<div class="elementor-element elementor-element-50190c1e elementor-widget elementor-widget-heading" data-id="50190c1e" data-element_type="widget" data-widget_type="heading.default" style="gap: var(--row-gap) var(--column-gap); --widgets-spacing: 20px 20px; --widgets-spacing-row: 20px; --widgets-spacing-column: 20px; width: 100%; max-width: 780px; margin-inline: auto; margin-block-end: 20px; text-align: center; margin-bottom: 0px;">
 <div class="elementor-widget-container" style="transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s); margin: 0px 0px 50px;">
 <h2 class="elementor-heading-title elementor-size-default" style="color: rgb(32, 32, 32); font-size: 26px; font-family: Montserrat, sans-serif; text-transform: uppercase;"><span style="letter-spacing: 0px; color: rgb(68, 68, 68); font-family: Inter, sans-serif; font-size: 16px; font-weight: 400;">Un grupo interdisciplinario para la Prevención, Atención&nbsp;</span></h2>
 <h2 class="elementor-heading-title elementor-size-default" style="color: rgb(32, 32, 32); font-size: 26px; font-family: Montserrat, sans-serif; text-transform: uppercase;"><span style="letter-spacing: 0px; color: rgb(68, 68, 68); font-family: Inter, sans-serif; font-size: 16px; font-weight: 400;">y Seguimiento de Violencia Sexual.</span></h2>
